@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/training/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design System Training</title>
+    <script type="text/javascript">
+      const redirect = (r) => {
+        if (r.search[1] === '/' ) {
+          let decoded = r.search.slice(1).split('&').map( (s) => { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState( null, null, r.pathname.slice(0, -1) + decoded + r.hash );
+        }
+      };
+      redirect(window.location);
+    </script>
+    <script type="module" crossorigin src="/training/assets/index.b6200ad2.js"></script>
+    <link rel="modulepreload" href="/training/assets/vendor.fc86197e.js">
+    <link rel="stylesheet" href="/training/assets/vendor.843a6b63.css">
+    <link rel="stylesheet" href="/training/assets/index.fac3a5f5.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+  </body>
+</html>
