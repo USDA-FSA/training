@@ -8,10 +8,11 @@ app.use(store);
 import { router } from '@/_router/routes';
 app.use(router);
 
+// BEFORE REMOVED - using vite.config.js to load in FSA-Style
 // Import FSA Style here to allow for font, image, and CSS assets
-import 'fsa-style';
+//import 'fsa-style/src/stylesheets/fsa-style.scss';
+//import 'fsa-style';
 // uncomment below if importing individual components
 //import { fsaModal } from 'fsa-style';
-//app.use(fsaModal);
 
 app.mount('#app');

@@ -1,0 +1,96 @@
+////////////////////////////////////////////////////////////////////////
+// Lists
+
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  margin: 0 0 $size-default;
+}
+
+dt {
+
+  font-weight: $font-bold;
+  margin-bottom: 0;
+
+  dd + & {
+    margin-top: $size-small;
+  }
+
+}
+
+.fsa-list {
+
+  &--bullet   { @include fsa-list-bullet();   }
+  &--number   { @include fsa-list-number();   }
+  &--unstyled { @include fsa-list-unstyled(); }
+  &--inline   { @include fsa-list-inline();   }
+
+  @include breakpoint(S) {
+    &--bullet\@s   { @include fsa-list-bullet();   }
+    &--number\@s   { @include fsa-list-number();   }
+    &--unstyled\@s { @include fsa-list-unstyled(); }
+    &--inline\@s   { @include fsa-list-inline();   }
+  }
+  @include breakpoint(M) {
+    &--bullet\@m   { @include fsa-list-bullet();   }
+    &--number\@m   { @include fsa-list-number();   }
+    &--unstyled\@m { @include fsa-list-unstyled(); }
+    &--inline\@m   { @include fsa-list-inline();   }
+  }
+  @include breakpoint(L) {
+    &--bullet\@l   { @include fsa-list-bullet();   }
+    &--number\@l   { @include fsa-list-number();   }
+    &--unstyled\@l { @include fsa-list-unstyled(); }
+    &--inline\@l   { @include fsa-list-inline();   }
+  }
+  @include breakpoint(XL) {
+    &--bullet\@xl   { @include fsa-list-bullet();   }
+    &--number\@xl   { @include fsa-list-number();   }
+    &--unstyled\@xl { @include fsa-list-unstyled(); }
+    &--inline\@xl   { @include fsa-list-inline();   }
+  }
+
+}
+
+ul { @extend .fsa-list--bullet; }
+ol { @extend .fsa-list--number; }
+
+.usa-unstyled-list {
+  // scss-lint:disable PlaceholderInExtend
+  @extend .fsa-list--unstyled;
+}
+
+[type="a"] {
+  list-style-type: lower-alpha;
+}
+[type="A"] {
+  list-style-type: upper-alpha;
+}
+[type="i"] {
+  list-style-type: lower-roman;
+}
+[type="I"] {
+  list-style-type: upper-roman;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  + ul,
+  + ol,
+  + .fsa-list--bullet,
+  + .fsa-list--number,
+  + .fsa-list--unstyled,
+  + .fsa-list--inline {
+    margin-top: 0;
+  }
+}

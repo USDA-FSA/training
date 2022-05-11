@@ -29,6 +29,7 @@ export default {
 };
 
 </script>
+
 <style lang="scss">
-@import '@/style/fsa-popover.scss'
+@import '@/style/index.scss';
 </style>
