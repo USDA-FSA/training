@@ -7,7 +7,7 @@
         <div class="fsa-section__bd">
           <div class="fsa-m-t--l">
             <div class="fsa-level@m fsa-level--justify-between">
-              <h1 class="fsa-m--none">Most Resent</h1>
+              <h1 class="fsa-m--none">Dashboard</h1>
             </div>
           </div>
         </div>
@@ -30,7 +30,10 @@
                       <a class="ds-jump__link" href="#main-content">Overview</a>
                     </li>
                     <li class="ds-jump__item">
-                      <a class="ds-jump__link" href="#general">General</a>
+                      <a class="ds-jump__link" href="#most-recent">Most Recent</a>
+                    </li>
+                    <li class="ds-jump__item">
+                      <a class="ds-jump__link" href="#popular-videos">Popular Videos</a>
                     </li>
                    
                   </ul>
@@ -48,146 +51,123 @@
 
                 <p
                   class="fsa-text--lead fsa-m-t--m"
-                >Core building blocks of the design system to ensure cohesive experiences across FPAC digital products.</p>
+                >Your Training resource for the <strong>FPAC Design System</strong>, industry standards, and general UX best practices.</p>
 
                 <!-- HAS components -->
 
-                <h2 id="general">General</h2>
+                <h2 id="most-recent">Most Recent</h2>
 
                 <div class="ds-subcat-list">
                   <ul class="ds-subcat-list__list">
                     <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/fsa-design-system/components/icons">
+                      <a class="ds-subcat-list__link" href="/training/components/icons">
                         <span class="ds-subcat-list__text">Icons</span>
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>
                     </li>
 
                     <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/fsa-design-system/components/icons">
-                        <span class="ds-subcat-list__text">Icons</span>
+                      <a class="ds-subcat-list__link" href="/training/components/icons">
+                        <span class="ds-subcat-list__text">Size and Spacing</span>
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>
                     </li>
 
                     <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/fsa-design-system/components/icons">
-                        <span class="ds-subcat-list__text">Icons</span>
-
-                        <img
-                          class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
-                          alt
-                        />
-                      </a>
-                    </li>
-
-                    <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/fsa-design-system/components/icons">
-                        <span class="ds-subcat-list__text">Icons</span>
-
-                        <img
-                          class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
-                          alt
-                        />
-                      </a>
-                    </li>
-
-                    <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/fsa-design-system/components/icons">
-                        <span class="ds-subcat-list__text">Icons</span>
-
-                        <img
-                          class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
-                          alt
-                        />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-
-                <h2 id="form-elements">Form Elements</h2>
-                <div class="ds-subcat-list">
-                  <ul class="ds-subcat-list__list">
-                    <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/fsa-design-system/components/buttons">
-                        <span class="ds-subcat-list__text">Buttons</span>
-
-                        <img
-                          class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
-                          alt
-                        />
-                      </a>
-                    </li>
-
-                    <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/fsa-design-system/components/button-group">
-                        <span class="ds-subcat-list__text">Button Group</span>
-
-                        <img
-                          class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
-                          alt
-                        />
-                      </a>
-                    </li>
-
-                    <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/fsa-design-system/components/checkbox">
-                        <span class="ds-subcat-list__text">Checkbox</span>
-
-                        <img
-                          class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
-                          alt
-                        />
-                      </a>
-                    </li>
-
-                    <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/fsa-design-system/components/date-picker">
-                        <span class="ds-subcat-list__text">Date Picker</span>
-
-                        <img
-                          class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
-                          alt
-                        />
-                      </a>
-                    </li>
-
-                    <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/fsa-design-system/components/form-fields">
+                      <a class="ds-subcat-list__link" href="/training/components/icons">
                         <span class="ds-subcat-list__text">Form Fields</span>
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
+                          alt
+                        />
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+
+                <h2 id="popular-videos">Popular Videos</h2>
+                <div class="ds-subcat-list">
+                  <ul class="ds-subcat-list__list">
+                    <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
+                      <a class="ds-subcat-list__link" href="/training/components/buttons">
+                        <span class="ds-subcat-list__text">Buttons</span>
+
+                        <img
+                          class="ds-subcat-list__img"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>
                     </li>
 
                     <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/fsa-design-system/components/radio">
-                        <span class="ds-subcat-list__text">Radio</span>
+                      <a class="ds-subcat-list__link" href="/training/components/button-group">
+                        <span class="ds-subcat-list__text">Date Picker</span>
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
+                          alt
+                        />
+                      </a>
+                    </li>
+
+                    <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
+                      <a class="ds-subcat-list__link" href="/training/components/checkbox">
+                        <span class="ds-subcat-list__text">Stepped Tabs</span>
+
+                        <img
+                          class="ds-subcat-list__img"
+                          src="/img/video-titles/video-coming-soon.png"
+                          alt
+                        />
+                      </a>
+                    </li>
+
+                    <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
+                      <a class="ds-subcat-list__link" href="/training/components/date-picker">
+                        <span class="ds-subcat-list__text">Stepped Control</span>
+
+                        <img
+                          class="ds-subcat-list__img"
+                          src="/img/video-titles/video-coming-soon.png"
+                          alt
+                        />
+                      </a>
+                    </li>
+
+                    <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
+                      <a class="ds-subcat-list__link" href="/training/components/form-fields">
+                        <span class="ds-subcat-list__text">Form Fields</span>
+
+                        <img
+                          class="ds-subcat-list__img"
+                          src="/img/video-titles/video-coming-soon.png"
+                          alt
+                        />
+                      </a>
+                    </li>
+
+                    <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
+                      <a class="ds-subcat-list__link" href="/training/components/radio">
+                        <span class="ds-subcat-list__text">Action Bar &amp; Table</span>
+
+                        <img
+                          class="ds-subcat-list__img"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>

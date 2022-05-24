@@ -62,7 +62,7 @@
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>
@@ -74,7 +74,7 @@
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>
@@ -86,7 +86,7 @@
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>
@@ -98,7 +98,7 @@
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>
@@ -110,7 +110,7 @@
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>
@@ -127,7 +127,7 @@
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>
@@ -139,7 +139,7 @@
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>
@@ -151,7 +151,7 @@
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>
@@ -163,7 +163,7 @@
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>
@@ -175,7 +175,7 @@
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>
@@ -187,7 +187,7 @@
 
                         <img
                           class="ds-subcat-list__img"
-                          src="/img/video-titles/video-placeholder.png"
+                          src="/img/video-titles/video-coming-soon.png"
                           alt
                         />
                       </a>

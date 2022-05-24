@@ -16,9 +16,6 @@
                 <li class="fsa-footer__list-item">
                   <a href="" @click.prevent="goto('https://www.figma.com/community/file/994660481391659106','_blank')">Figma Design System</a>
                 </li>
-                <li class="fsa-footer__list-item">
-                  <a href="" @click.prevent="goto('https://www.figma.com/community/file/994660481391659106','_blank')">Fake link</a>
-                </li>
               </ul>
             </div>
             
