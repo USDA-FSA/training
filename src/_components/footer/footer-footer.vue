@@ -8,7 +8,7 @@
               <h3 class="fsa-footer__cat-header">FPAC UX Resources</h3>
               <ul class="fsa-footer__list">
                 <li class="fsa-footer__list-item">
-                  <a href="" @click.prevent="goto('https://usda-fsa.github.io/fsa-design-system/','_blank')">FPAC Design System</a>
+                  <a href="" @click.prevent="goto('https://usda-fsa.github.io/training/','_blank')">FPAC Design System</a>
                 </li>
                 <li class="fsa-footer__list-item">
                   <a href="" @click.prevent="goto('https://github.com/USDA-FSA/fsa-design-system','_blank')">Design System Codebase</a>

@@ -13,6 +13,13 @@
       "path": "/visual-style",
       "hasChild": "false",
       "columnClass": ""    
+    },
+    {
+      "uid": "ui-components-id",
+      "label": "UI Components",
+      "path": "/ui-components",
+      "hasChild": "false",
+      "columnClass": ""    
     }
   ],
   "side": [

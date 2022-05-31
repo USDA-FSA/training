@@ -2,11 +2,13 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import { dashboardRoutes } from '@/Dashboard/_routes/dashboard.routes.js';
 import { visualStyleRoutes } from '@/Visual-Style/_routes/visual-style.routes.js';
+import { uiComponentsRoutes } from '@/UI-Components/_routes/ui-components.routes.js';
 
 
 const routes = [
   ...dashboardRoutes,
   ...visualStyleRoutes,
+  ...uiComponentsRoutes,
   { 
     path: '/:pathMatch(.*)*',
     name: 'not-found',
