@@ -20,6 +20,23 @@
       "path": "/ui-components",
       "hasChild": "false",
       "columnClass": ""    
+    },
+    {
+      "uid": "general-id",
+      "label": "General Topics",
+      "path": "/general",
+      "hasChild": "true",
+      "multiColumn": "false",
+      "columnClass": "fsa-nav-global__link--has-sub-menu",
+      "hasHeaders": "false",
+      "children": [
+        {
+          "uid": "prototype-kit-id",
+          "label": "Prototype Kit Installation",
+          "path": "/general/prototype-kit",
+          "hasChild": "false"
+        }
+      ]
     }
   ],
   "side": [
