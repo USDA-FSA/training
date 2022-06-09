@@ -74,12 +74,16 @@
                 
                 <div class="fsa-level fsa-level--none@xs fsa-level--inline@s fsa-level--gutter-m@s fsa-level--none@l">
                   <div class="uxt-video-related__item">
-                    <img class="uxt-video-related__item-media" src="/img/video-titles/video-coming-soon.png" alt/>
-                    <span class="uxt-video-related__item-text">Buttons</span>
+                    <a @click.prevent="goto('/ui-components/buttons')" class="uxt-video-related__item-link" href="">
+                      <img class="uxt-video-related__item-media" src="/img/video-titles/video-coming-soon.png" alt/>
+                      <span class="uxt-video-related__item-text">UI Components - Buttons</span>
+                    </a>
                   </div>
                   <span class="uxt-video-related__item">
-                    <img class="uxt-video-related__item-media" src="/img/video-titles/video-coming-soon.png" alt/>
-                    <span class="uxt-video-related__item-text">Form Fields</span>
+                    <a @click.prevent="goto('/ui-components/form-field')" class="uxt-video-related__item-link" href="">
+                      <img class="uxt-video-related__item-media" src="/img/video-titles/video-coming-soon.png" alt/>
+                      <span class="uxt-video-related__item-text">UI Components - Form Field</span>
+                    </a>
                   </span>
                 </div>
               

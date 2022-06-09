@@ -1,6 +1,6 @@
 .uxt-video {
   background-color: #DBDAD9;
-  border: 8px solid #DBDAD9;
+  border: 4px solid #DBDAD9;
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
@@ -16,6 +16,18 @@
 
   &-related {
 
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 0;
+
+    @include breakpoint(s) {
+      margin-left: 0 ;
+    }
+
+    @include breakpoint(m) {
+      margin-left: $size-medium;
+    }
+
     &__header {
       @include font-size(4);
       font-weight: $font-bold;
@@ -25,13 +37,20 @@
   
       margin-bottom: $size-medium;
 
+      &-link {
+        text-decoration: none;
+
+        &:hover {
+          border: ($size-base / 2) solid #FF0000;
+          border-top-width: $size-small;
+          border-radius: $size-base;
+        }
+
+      }
+
       &-text {
         @include font-size(4);
         display: block;
-
-        .uxt-video-related__item-link:focus & {
-          @include fsa-focus;
-        }    
       }
     
       &-media {
@@ -41,64 +60,37 @@
 
       @include breakpoint(S) {
         &-text {
-    
           @include font-size(4);
           display: block;
           font-weight: 400;
-      
-          .uxt-video-related__item-link:focus & {
-            @include fsa-focus;
-          }
-      
         }
       
         &-media {
-          display: block;
           width: 100%;
         }
       }
     
       @include breakpoint(M) {
         &__text {
-    
           @include font-size(3);
           display: block;
           font-weight: $font-bold;
-      
-          .uxt-related-video__link:focus & {
-            @include fsa-focus;
-          }
-      
         }
       
         &__img {
-          display: block;
           width: 100%;
-          border: ($size-base / 2) solid $color-fsa-tertiary-200;
-          border-top-width: $size-small;
-          border-radius: $size-base;
         }
       }
     
       @include breakpoint(L) {
         &__text {
-    
           @include font-size(3);
           display: block;
           font-weight: $font-bold;
-      
-          .uxt-related-video__link:focus & {
-            @include fsa-focus;
-          }
-      
         }
       
         &__img {
-          display: block;
           width: 70%;
-          border: ($size-base / 2) solid $color-fsa-tertiary-200;
-          border-top-width: $size-small;
-          border-radius: $size-base;
         }
       }
   
