@@ -6,6 +6,13 @@
       "path": "/",
       "hasChild": "false",
       "columnClass": ""    
+    },
+    {
+      "uid": "visual-style-id",
+      "label": "Visual Style",
+      "path": "/visual-style",
+      "hasChild": "false",
+      "columnClass": ""    
     }
   ],
   "side": [
