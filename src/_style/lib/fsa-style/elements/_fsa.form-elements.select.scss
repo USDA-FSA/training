@@ -34,7 +34,7 @@
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 
     // IE doesn't like the extra padding on right.
-    // padding-right: $form-padding / 2;
+    // padding-right: math.div($form-padding, 2);
 
     // IE 10+ doesn't like the SVG for select arrows
     background-image: url('#{$image-path}/arrow-down.png');
@@ -192,7 +192,7 @@
     padding: 0;
 
     option {
-      padding: ($form-padding / 2) $form-padding;
+      padding: math.div($form-padding, 2) $form-padding;
       &:hover {
         cursor: pointer;
         background-color: $color-fsa-tertiary-100;

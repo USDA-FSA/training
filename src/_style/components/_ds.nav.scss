@@ -43,7 +43,7 @@
       @include font-size(2);
       text-decoration: none;
       color: $color-fsa-white;
-      padding: ($size-base / 2) $size-small;
+      padding: math.div($size-base, 2) $size-small;
 
       @include breakpoint(M) {
         @include font-size(3);

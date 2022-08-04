@@ -28,8 +28,8 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
   --grid-demo-columns: #{$fsa-grid-columns};
   --grid-demo-gutter: #{$fsa-grid-gutter};
   --grid-demo-bgcolor: #{transparentize($color-fsa-aqua, .92)};
-  --grid-demo-repeating-width: calc(100% / var(--grid-demo-columns));
-  --grid-demo-column-width: calc((100% / var(--grid-demo-columns)) - var(--grid-demo-gutter));
+  --grid-demo-repeating-width: math.div(100%, var(--grid-demo-columns));
+  --grid-demo-column-width: math.div((100%, var(--grid-demo-columns)) - var(--grid-demo-gutter));
   --grid-demo-background-width: calc(100% + var(--grid-demo-gutter));
   --grid-demo-background-columns: repeating-linear-gradient(
     to right,
@@ -267,7 +267,7 @@ $color-annotation: $color-fsa-secondary; //  $color-fsa-red
             $size: $size-default;
             content : '';
             display: inline-block;
-            margin-left: $size-base + ($size-base / 2);
+            margin-left: $size-base + math.div($size-base, 2);
             width: $size;
             height: ($size + .2rem);
             background-image: url('#{$image-path}/angle-arrow-down-hover.png');

@@ -1,12 +1,11 @@
-////////////////////////////////////////////////////////////////////////////////
-// USWDS - Start off with a select set of imports from USWDS ///////////////////
+
+// USWDS - Start off with a select set of imports from USWDS 
 @import 'uswds-select';
 @import 'core/DEVELOPMENT'; // optional
 
-////////////////////////////////////////////////////////////////////////////////
-// FSA - Custom ////////////////////////////////////////////////////////////////
+// FSA - Custom 
 
-// Core -------------- /////////////////////////////////////////////////////////
+// Core -------------- 
 
 @import 'core/fsa.variables';
 @import 'core/fsa.font';
@@ -14,7 +13,7 @@
 @import 'core/fsa.base';
 @import 'core/fsa.grid';
 
-// Elements -------------- /////////////////////////////////////////////////////
+// Elements -------------- 
 
 @import 'elements/fsa.skipnav';
 @import 'elements/fsa.typography';
@@ -33,7 +32,7 @@
 @import 'elements/fsa.label';
 @import 'elements/fsa.badge';
 
-// Components -------------- ///////////////////////////////////////////////////
+// Components -------------- 
 
 @import 'components/fsa.level';
 @import 'components/fsa.search';
@@ -67,16 +66,11 @@
 @import 'components/fsa.timeline';
 @import 'components/fsa.divider';
 
-// Layout-------------- ////////////////////////////////////////////////////////
+// Layout-------------- 
 
 @import 'layout/fsa.section';
 
-// Other -------------- ////////////////////////////////////////////////////////
+// Other -------------- 
 
 @import 'elements/fsa.css-utilities';
 @import 'components/fsa.SHAME';
-
-// fin /////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
-
-

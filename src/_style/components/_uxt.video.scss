@@ -6,6 +6,10 @@
   padding-bottom: 56.25%;
   height: 0;
 
+  &__md {
+    //width: 80%;
+  }
+
   & iframe {
     position: absolute;
     top: 0;
@@ -41,7 +45,7 @@
         text-decoration: none;
 
         &:hover {
-          border: ($size-base / 2) solid #FF0000;
+          border: math.div($size-base, 2) solid #FF0000;
           border-top-width: $size-small;
           border-radius: $size-base;
         }

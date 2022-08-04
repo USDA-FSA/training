@@ -17,7 +17,7 @@
     }
 
     &:not(.ds-sitemap__list--root) {
-      margin-left: $branch-width / 2;
+      margin-left: math.div($branch-width, 2);
     }
 
   }

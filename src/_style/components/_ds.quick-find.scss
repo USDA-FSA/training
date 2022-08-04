@@ -69,7 +69,7 @@
         font-weight: $font-bold;
         text-transform: uppercase;
         display: block;
-        padding: ($size-small / 2) $size-default;
+        padding: math.div($size-small, 2) $size-default;
         background-color: $color-fsa-tertiary-200;
         color: $color-fsa-tertiary;
       }
