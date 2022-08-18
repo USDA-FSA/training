@@ -16,7 +16,6 @@ export function useMenuSystem() {
   }
   
   const openMenu = (item, menu) => {
-    console.log('openMenu')
     theItem = item;
     theMenu = menu;
     let id = item.getAttribute('aria-controls');

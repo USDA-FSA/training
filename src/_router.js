@@ -1,16 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
 import { dashboardRoutes } from '@/Dashboard/_routes/dashboard.routes.js';
-import { generalRoutes } from '@/General/_routes/general.routes.js';
-import { visualStyleRoutes } from '@/Visual-Style/_routes/visual-style.routes.js';
-import { uiComponentsRoutes } from '@/UI-Components/_routes/ui-components.routes.js';
+import { videoRoutes } from '@/Video/_routes/video.routes.js';
 
 
 const routes = [
   ...dashboardRoutes,
-  ...generalRoutes,
-  ...visualStyleRoutes,
-  ...uiComponentsRoutes,
+  ...videoRoutes,
   { 
     path: '/:pathMatch(.*)*',
     name: 'not-found',

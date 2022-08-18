@@ -4,7 +4,7 @@
       AG_ABBR="USDA"
       AG_FULL="United States Department of Agriculture"
       AG_URL="//www.usda.gov"
-      AG_LOGO="./img/usda-logo--white.svg"
+      :AG_LOGO="baseUrl + 'img/usda-logo--white.svg'"
       SUB_AG_ABBR="FPAC"
       SUB_AG_FULL="Farm Production and Conservation"
       SUB_AG_URL="//fsa.usda.gov"
@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import { onMounted, ref, reactive, computed } from 'vue';
+import { onMounted, ref, computed } from 'vue';
 
 import { navigationService } from '@/Shared/_services/navigation.service';
 import { useStore } from 'vuex';
@@ -48,6 +48,8 @@ export default {
     globalNav
   },
   setup(props, {emit}){
+
+    const baseUrl = ref(import.meta.env.BASE_URL);
     const store = useStore();
 
     const navigationData = computed(() => store.getters["navigation/getNavigation"]);
@@ -62,6 +64,7 @@ export default {
     });
 
     return {
+      baseUrl,
       navigationData,
       submitSearch
     }

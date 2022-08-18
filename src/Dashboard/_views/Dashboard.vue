@@ -30,7 +30,7 @@
                       <a class="ds-jump__link" href="#main-content">Overview</a>
                     </li>
                     <li class="ds-jump__item">
-                      <a class="ds-jump__link" href="#most-recent">Most Recent</a>
+                      <a class="ds-jump__link" href="#most-recent">Most Recent Videos</a>
                     </li>
                     <li class="ds-jump__item">
                       <a class="ds-jump__link" href="#popular-videos">Popular Videos</a>
@@ -55,7 +55,7 @@
 
                 <!-- HAS components -->
 
-                <div class="uxt-video uxt-video__md">
+                <!-- <div class="uxt-video uxt-video__md">
                   <iframe
                     width="640"
                     height="360"
@@ -65,6 +65,10 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                   </iframe>
+                </div>  -->
+
+                <div class="uxt-video uxt-video__md">
+                  <img class="" src="/img/overview-fake-928x527.png" alt="Overview Video Image" />
                 </div>
 
                 <h3>Video Description</h3>
@@ -92,7 +96,7 @@
                   </div>               
                   <div class="uxt-drawer__container fsa-m-l--xxs fsa-m-r--xxs">
                     <div class="uxt-drawer__container-bg--hide fsa-p--m fsa-border--xxs">
-                      <p :id="videoId +'-container'"></p>
+                      <span :id="videoId +'-container'"></span>
                       <div class="fsa-m-t--l fsa-text-align--center">
                         <button @click="toggleTranscriptDrawer" class="fsa-btn fsa-btn--flat">Close</button>
                       </div>
@@ -102,12 +106,12 @@
 
 
 
-                <h2 id="most-recent">Most Recent</h2>
+                <h2 id="most-recent">Most Recent Videos</h2>
 
                 <div class="ds-subcat-list">
                   <ul class="ds-subcat-list__list">
                     <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/training/components/icons">
+                      <a @click.prevent="goto('/video/icons')" class="ds-subcat-list__link" href="/training/video/icons">
                         <span class="ds-subcat-list__text">Icons</span>
 
                         <img
@@ -119,7 +123,7 @@
                     </li>
 
                     <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/training/components/icons">
+                      <a @click.prevent="goto('/video/stepped-controls')" class="ds-subcat-list__link" href="/training/video/stepped-controls">
                         <span class="ds-subcat-list__text">Stepped Controls</span>
 
                         <img
@@ -131,7 +135,7 @@
                     </li>
 
                     <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/training/components/icons">
+                      <a @click.prevent="goto('/video/form-fields')" class="ds-subcat-list__link" href="/training/video/form-fields">
                         <span class="ds-subcat-list__text">Form Fields</span>
 
                         <img
@@ -149,7 +153,7 @@
                 <div class="ds-subcat-list">
                   <ul class="ds-subcat-list__list">
                     <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/training/components/buttons">
+                      <a @click.prevent="goto('/video/buttons')" class="ds-subcat-list__link" href="/training/video/buttons">
                         <span class="ds-subcat-list__text">Buttons</span>
 
                         <img
@@ -161,7 +165,7 @@
                     </li>
 
                     <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/training/components/button-group">
+                      <a @click.prevent="goto('/video/date-picker')" class="ds-subcat-list__link" href="/training/video/date-picker">
                         <span class="ds-subcat-list__text">Date Picker</span>
 
                         <img
@@ -173,7 +177,7 @@
                     </li>
 
                     <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/training/components/checkbox">
+                      <a @click.prevent="goto('/video/stepped-tabs')" class="ds-subcat-list__link" href="/training/video/stepped-tabs">
                         <span class="ds-subcat-list__text">Stepped Tabs</span>
 
                         <img
@@ -185,7 +189,7 @@
                     </li>
 
                     <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/training/components/date-picker">
+                      <a @click.prevent="goto('/video/stepped-control')" class="ds-subcat-list__link" href="/training/video/stepped-control">
                         <span class="ds-subcat-list__text">Stepped Control</span>
 
                         <img
@@ -197,7 +201,7 @@
                     </li>
 
                     <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/training/components/form-fields">
+                      <a @click.prevent="goto('/video/button-group')" class="ds-subcat-list__link" href="/training/video/button-group">
                         <span class="ds-subcat-list__text">Button Group</span>
 
                         <img
@@ -209,7 +213,7 @@
                     </li>
 
                     <li class="ds-subcat-list__list-item ds-subcat-list__list-item--thirds">
-                      <a class="ds-subcat-list__link" href="/training/components/radio">
+                      <a @click.prevent="goto('/video/508-accessibility')" class="ds-subcat-list__link" href="/training/video/508-accessibility">
                         <span class="ds-subcat-list__text">508 Accessibility</span>
 
                         <img
@@ -299,7 +303,6 @@ export default {
     }
 
     watch(videosData, (_value)=>{
-      //console.log('watch',_value)
       initVideo(_value);
     })
 

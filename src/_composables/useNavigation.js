@@ -5,12 +5,12 @@ export function useNavigation() {
   
   const router = useRouter();
 
-  const goto = (path, target='') => {
-    if(path.includes('http')){
-      if(target=='_blank') window.open(path, target);
-      else window.location.href = path;
+  const goto = (_path, _target='') => {
+    if(_path.includes('http')){
+      if(_target=='_blank') window.open(_path, _target);
+      else window.location.href = _path;
     } else {
-      router.push(path)
+      router.push(_path)
     }
   }
 
