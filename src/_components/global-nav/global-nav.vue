@@ -204,7 +204,7 @@ export default {
 
     const doSearch = (event) => {
       let p = document.getElementById('searchPhrase').value
-      console.log('p',p)
+      //console.log('p',p)
       emit("emitSearch", {type: 'default', phrase: p})
     }
 

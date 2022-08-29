@@ -2,11 +2,13 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import { dashboardRoutes } from '@/Dashboard/_routes/dashboard.routes.js';
 import { videoRoutes } from '@/Video/_routes/video.routes.js';
+import { searchRoutes } from '@/Search/_routes/search.routes.js';
 
 
 const routes = [
   ...dashboardRoutes,
   ...videoRoutes,
+  ...searchRoutes,
   { 
     path: '/:pathMatch(.*)*',
     name: 'not-found',

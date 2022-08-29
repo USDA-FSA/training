@@ -34,6 +34,7 @@ import { onMounted, ref, computed } from 'vue';
 
 import { navigationService } from '@/Shared/_services/navigation.service';
 import { useStore } from 'vuex';
+import { useNavigation } from "@/_composables/useNavigation";
 
 
 import tophat from '@/_components/tophat/tophat.vue';
@@ -51,12 +52,14 @@ export default {
 
     const baseUrl = ref(import.meta.env.BASE_URL);
     const store = useStore();
+    const { goto } = useNavigation();
 
     const navigationData = computed(() => store.getters["navigation/getNavigation"]);
 
     const submitSearch = ( obj ) => {
       emit('emitSearch',obj)
-      console.log('NAV SEARCH BASEHEADER', obj)
+      //console.log('NAV SEARCH BASEHEADER', obj)
+      goto('/search/' + obj.phrase)
     };
 
     onMounted(()=>{

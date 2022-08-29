@@ -1,6 +1,6 @@
 <template>
   <div>
-    <baseHeader @emitSearch="submitSearch"></baseHeader>
+    <baseHeader></baseHeader>
 
     <main id="main-content" tabindex="-1">
       <div class="fsa-section">
@@ -237,7 +237,6 @@ export default {
       goto,
       videoId,
       videoTitle,
-      videosData,
       videoDescription,
       showTranscript,
       toggleTranscriptDrawer,
