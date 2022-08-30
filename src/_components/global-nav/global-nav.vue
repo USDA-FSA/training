@@ -203,13 +203,16 @@ export default {
     };
 
     const doSearch = (event) => {
-      let p = document.getElementById('searchPhrase').value
-      //console.log('p',p)
+      let searchField = document.getElementById('searchPhrase');
+      let p = searchField.value
+      searchField.value = '';
       emit("emitSearch", {type: 'default', phrase: p})
     }
 
     const doScopedSearch = (event) => {
-      let p = document.getElementById('searchPhrase').value
+      let searchField = document.getElementById('searchPhrase');
+      let p = searchField.value
+      searchField.value = '';
       let cat = document.getElementById('scopedCategory').selected
       emit("emitSearch", {type: 'scoped', scope: cat, phrase: p})
     }

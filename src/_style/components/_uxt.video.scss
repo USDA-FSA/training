@@ -38,7 +38,9 @@
     }
   
     &__item {
-  
+      width: 100%;
+      display: block;
+
       margin-bottom: $size-medium;
 
       &-link {
@@ -70,6 +72,7 @@
         }
       
         &-media {
+          display: block;
           width: 100%;
         }
       }
@@ -81,8 +84,8 @@
           font-weight: $font-bold;
         }
       
-        &__img {
-          width: 100%;
+        &-media {
+          width: 75%;
         }
       }
     
@@ -93,8 +96,8 @@
           font-weight: $font-bold;
         }
       
-        &__img {
-          width: 70%;
+        &-media {
+          width: 80%;
         }
       }
   

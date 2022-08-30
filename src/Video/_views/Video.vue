@@ -73,14 +73,15 @@
               <div class="uxt-video-related">
                 <span class="uxt-video-related__header">Related Videos:</span>
                 
-                <div class="fsa-level fsa-level--none@xs fsa-level--inline@s fsa-level--gutter-m@s fsa-level--none@l">
+                <!-- <div class="fsa-level fsa-level--none@s fsa-level--full@m fsa-level--justify-right fsa-level--gutter-m@s fsa-level--none@l"> -->
+                
                   <div v-for="video in relatedVideos" :key="video.uid" class="uxt-video-related__item">
-                    <a @click.prevent="goto( getPathFromId(video.uid) )" class="uxt-video-related__item-link" :href="'/training'+ getPathFromId(video.uid)">
-                      <img class="uxt-video-related__item-media" :src="video.videoTitleImage" :alt="video.title"/>
+                    <a @click.prevent="goto( getPathFromId(video.uid) )" class="uxt-video-related__item-link" :href="baseUrl + getPathFromId(video.uid)">
+                      <img class="uxt-video-related__item-media" :src="baseUrl + video.videoTitleImage" :alt="video.title"/>
                       <span class="uxt-video-related__item-text">{{ video.title }} - {{ video.category }}</span>
                     </a>
                   </div>
-                </div>
+                <!-- </div> -->
               
               </div>
 
@@ -117,6 +118,7 @@ export default {
   },
 
   setup(props) {
+    const baseUrl = ref(import.meta.env.BASE_URL);
     const store = useStore();
     const route = useRoute();
     const { 
@@ -155,8 +157,7 @@ export default {
     }
 
     const setVideoId = (_path) => {
-      let tempPath = '/video/' + _path;
-      let index = videosData.value.findIndex( o => o.routePath == tempPath );
+      let index = videosData.value.findIndex( o => o.routePath.includes(_path) );
       if(index > -1){
         let obj = videosData.value[index];
         videoId.value = obj.uid;
@@ -234,6 +235,7 @@ export default {
     });
 
     return {
+      baseUrl,
       goto,
       videoId,
       videoTitle,
