@@ -111,7 +111,7 @@
             <div class="fsa-search__bd">
               <div class="fsa-search__entry fsa-search__entry--grow">
                 <label class="fsa-search__label fsa-search__label--sr-only" for="searchPhrase">Search [app-name]</label>
-                <input placeholder="Search" class="fsa-input fsa-input--small fsa-search__input" id="searchPhrase" type="search" name="searchPhrase">
+                <input v-on:keyup.enter="doSearch" placeholder="Search" class="fsa-input fsa-input--small fsa-search__input" id="searchPhrase" type="search" name="searchPhrase">
               </div>
               <div class="fsa-search__submit">
                 <button @click="doSearch" class="fsa-btn fsa-btn--small fsa-search__btn fsa-search__btn--icon">
@@ -126,7 +126,7 @@
             <div class="fsa-search__bd">
               <div class="fsa-search__entry fsa-search__entry--grow">
                 <label class="fsa-search__label fsa-search__label--sr-only" for="scopedSearchPhrase">Search [app-name]</label>
-                <input placeholder="Search" class="fsa-input fsa-input--small fsa-search__input" id="scopedSearchPhrase" type="search" name="scopedSearchPhrase">
+                <input v-on:keyup.enter="doScopedSearch" placeholder="Search" class="fsa-input fsa-input--small fsa-search__input" id="scopedSearchPhrase" type="search" name="scopedSearchPhrase">
               </div>
               <div class="fsa-search__entry">
                 <label class="fsa-search__label fsa-search__label--sr-only" for="scopedCategory">Search Category</label>

@@ -196,10 +196,12 @@ export default {
     const totalResults = ref(0);
 
     const setSearchResults = (_phrase) => {
+      if(_phrase === undefined) return; // only execute if a phrase has been passed
+      
       searchPhrase.value = _phrase;
       let results = videos.value.filter( (_o) => {
         let isFound = false;
-        isFound = isFound ? true : checkSearchTeams(_phrase, _o);
+        isFound = isFound ? true : checkSearchTerms(_phrase, _o);
         isFound = isFound ? true : checkDescription(_phrase, _o);
         return isFound;
       });
@@ -207,12 +209,12 @@ export default {
         videoResults.value = results;
         totalResults.value = results.length;
       } else {
-         videoResults.value = null;
-         totalResults.value = 0;
+        videoResults.value = null;
+        totalResults.value = 0;
       }
     }
 
-    const checkSearchTeams = (_phrase, _o) => {
+    const checkSearchTerms = (_phrase, _o) => {
       let ind = _o.searchTerms.findIndex( _oo => _oo.toLowerCase() == _phrase.toLowerCase() );
       if( ind > -1 ) return true;
       else return false;
