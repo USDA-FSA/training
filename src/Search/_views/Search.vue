@@ -182,7 +182,6 @@ export default {
     const route = useRoute();
     const { goto } = useNavigation();
 
-
     const videosData = computed(() => {
       let data = store.getters["videos/getVideos"];
       if(data) return data;
@@ -232,7 +231,7 @@ export default {
       newStr = newStr.replaceAll('"', ''); // remove double quotes
 
       excludedWords.value.forEach( (_o) =>{
-        newStr = newStr.replaceAll(' '+_o+' ', ' ');
+        newStr = newStr.replaceAll(' '+ _o +' ', ' ');
       });
       return newStr;
     }
